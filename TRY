@@ -1,0 +1,60 @@
+# Problema Cotalker 2019 / 2020
+v.1.1
+
+### Introducción
+
+Se requiere un programa que pueda convertir frases simples en acciones.
+
+Ejemplos:
+1. /calendar 26/10/2020 con Edward y Nicolás
+2. /calendar próximo lunes
+3. /calendar hoy nicolas y guillermo 
+4. /calendar "Reunion de producto" 26/10/2020 16:30 Edward y Nicolás
+5. /calendar hoy 11:30 nicolas y guillermo
+Cada uno de estos ejemplos crean una evento en Calendar, para el día y con las personas nombradas.
+
+### Fechas
+
+Se deben reconocer algunos formatos de fechas, entre ellas:
+
+1. Hoy
+2. Mañana
+3. (lunes|martes|miércoles|jueves|...)
+4. 01/10/2019 --> DD/MM/YYYY
+5. 2019/10/01 --> YYYY/MM/DD
+
+Además, las fechas serán aceptadas en el formato de 24 horas por el momento. Además, deben ir luego de escribir la fecha. Si no hay hora, no se asumirá ningún horario.
+### Personas
+
+El programa debe contar con una fuente interna de nombres y correos e.g.,
+```
+[
+  { name: "Edward", email: "edward@test.com" },
+  { name: "Nicolás", email: "nicolas@test.com" },
+]
+```
+
+Se deberá hacer una aproximación a los nombres encontrados. E.g., Nicolás o nicolas debe ser válido.
+Además, al escribir el nombre de las personas, deben estar separadas por comas, con el fin de hacer un primer acercamiento.
+
+#Título
+
+El nombre del evento que se quiere agendar debe estar escrito entre comillas dobles, en cualquier otro caso se asumirá se asumirá el nombre Meeting.
+
+### Requerimientos
+
+*  Debe ser aplicación web.
+*  La aplicación debe tener al menos:
+    *  Un input de texto para introducir la acción
+    *  Un botón para enviar la acción
+    *  En caso de error un texto explicando brevemente el problema
+    *  En caso de éxito mostrar la URL (la api la retorna al ser creada exitosamente)
+*  Es posible (y necesario) agregar restricciones adicionales para limitar el programa.
+*  Todo lo que no esté descrito en este documento es de libre elección.
+
+### Notas finales 
+
+*  Se pueden usar tantas liberias como estimen necesarios.
+*  Si el problema se exiende mucho, limiten, cambien o remuevan requerimientos.
+*  Si tienen cualquier duda, necesitas ayuda o quiere feedback: contáctanos :) 
+*  Éxito!
