@@ -24,6 +24,7 @@ Se deben reconocer algunos formatos de fechas, entre ellas:
 5. 2019/10/01 --> YYYY/MM/DD
 
 Además, las fechas serán aceptadas en el formato de 24 horas por el momento. Además, deben ir luego de escribir la fecha. Si no hay hora, no se asumirá ningún horario.
+Primero debe ir la fecha y luego la hora en la frase que escriba el usuario.
 ### Personas
 
 El programa debe contar con una fuente interna de nombres y correos e.g.,
@@ -40,7 +41,7 @@ Además, al escribir el nombre de las personas, deben estar separadas por comas,
 #Título
 
 El nombre del evento que se quiere agendar debe estar escrito entre comillas dobles, en cualquier otro caso se asumirá se asumirá el nombre Meeting.
-
+Si va un titulo, debe ir primero 
 ### Requerimientos
 
 *  Debe ser aplicación web.
