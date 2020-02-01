@@ -42,6 +42,7 @@ Además, al escribir el nombre de las personas, deben estar separadas por comas,
 
 El nombre del evento que se quiere agendar debe estar escrito entre comillas dobles, en cualquier otro caso se asumirá se asumirá el nombre Meeting.
 Si va un titulo, debe ir primero 
+
 ### Requerimientos
 
 *  Debe ser aplicación web.
@@ -53,9 +54,11 @@ Si va un titulo, debe ir primero
 *  Es posible (y necesario) agregar restricciones adicionales para limitar el programa.
 *  Todo lo que no esté descrito en este documento es de libre elección.
 
-### Notas finales 
+### Timezone
 
-*  Se pueden usar tantas liberias como estimen necesarios.
-*  Si el problema se exiende mucho, limiten, cambien o remuevan requerimientos.
-*  Si tienen cualquier duda, necesitas ayuda o quiere feedback: contáctanos :) 
-*  Éxito!
+Una gran problema radica ¿cuál es el Timezone de la persona que recibe el correo? Pues una empresa puede ser de cualquier país en Amé
+rica. Además, la empresa puede tener trabajadores en disintas zonas de América. Por tanto de aquí surgió una solución parche por el momento:
+* Por Empresa se asginó una variable llamada defaultTimezone
+* PB Calendar busca el valor de la variable y si está vacía asigna el Timezone de Chile
+Los siguientes pasos será hacer un cambio profundo en esta variable, que logre resolver el problema.
+
